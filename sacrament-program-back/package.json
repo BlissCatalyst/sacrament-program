@@ -1,0 +1,7 @@
+{
+  "name": "sacrament-program-back",
+  "version": "1.0.0",
+  "description": "The api allowing a user to store and create new sacrament meeting programs",
+  "main": "index.js",
+  "license": "MIT"
+}
