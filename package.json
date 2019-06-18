@@ -1,0 +1,9 @@
+{
+  "name": "sacrament-program",
+  "version": "1.0.0",
+  "description": "An application to create sacrament meeting programs. This application will also be used to store them ans search for old ones. ",
+  "main": "index.js",
+  "repository": "https://github.com/BlissCatalyst/sacrament-program.git",
+  "author": "Logan Hufstetler <logan.hufstetler@gmail.com>",
+  "license": "MIT"
+}
