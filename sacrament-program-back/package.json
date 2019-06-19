@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "The api allowing a user to store and create new sacrament meeting programs",
   "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "testing": "cross-env DV_ENV=testing jest --watch --verbose --runInBand",
+    "test": "cross-env DV_ENV=testing jest --watch"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
