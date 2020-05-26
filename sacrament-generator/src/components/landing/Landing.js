@@ -4,7 +4,7 @@ export default class Landing extends Component {
   render() {
     return (
       <div>
-        <h1>Hello World!</h1>
+        <h1>Program Generator</h1>
       </div>
     );
   }
