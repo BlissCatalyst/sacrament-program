@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Landing extends Component {
-  render() {
+export default function Landing() {
     return (
-      <div>
-        <h1>Program Generator</h1>
-      </div>
+        <div>
+            <h1>Program Generator</h1>
+        </div>
     );
-  }
 }
