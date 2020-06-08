@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap");
+
+// Colors
+@font-color: lightgray;
+@app-color: #1b262c;
+@header: #3282b8;
+@footer: #292929;
+@highlight-color: #bbe1fa;
+
+// Fonts
+@heading: "Roboto", sans-serif;
+@text: "Open Sans", sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+// body background-color is color of footer since "footer" in react app is in the html body.
+body {
+    font-family: @text;
+    background-color: @footer;
+    color: @font-color;
+}
+
+// Manually changing the actual app color to be different than footer.
+.App {
+    background-color: @app-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: @heading;
+}
+
+h1 {
+    font-size: 5rem;
+}
