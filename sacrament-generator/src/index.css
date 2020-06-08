@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -148,6 +149,9 @@ body {
   background-color: #292929;
   color: lightgray;
 }
+header {
+  background-color: #3282b8;
+}
 .App {
   background-color: #1b262c;
 }
@@ -160,10 +164,25 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .App-header {
-  background-color: #3282b8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-header .Header-title {
+  margin: 1rem 2rem;
+}
+.App-header .Header-title div {
+  width: 130px;
+  text-align: center;
+}
+.Navigation {
+  margin: 1rem 4rem;
+}
+.Navigation i {
+  font-size: 4rem;
 }
 footer {
   background-color: #292929;
