@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navigation from "./Navigation/Navigation.js";
+import NavMenu from "./NavMenu/NavMenu.js";
 
 export default function Header() {
+    const [showNavMenu, setShowNavMenu] = useState(false);
+    const handleClick = () => {
+        if (showNavMenu === false) {
+            setShowNavMenu(true);
+        } else {
+            setShowNavMenu(false);
+        }
+    };
+
     return (
         <div className="App-header">
             <div className="Header-title">
@@ -10,7 +20,8 @@ export default function Header() {
                     <h1>Program Generator</h1>
                 </div>
             </div>
-            <Navigation />
+            <Navigation handleClick={handleClick} />
+            {showNavMenu && <NavMenu />}
         </div>
     );
 }
