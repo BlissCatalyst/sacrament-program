@@ -16,6 +16,8 @@
 }
 .navMenuOpen {
     background-color: @Navigation-selected;
+    // setting z-index here means this class lays on top of NavMenu
+    // therefore covering NavMenu's shadow.
     z-index: 0;
     box-shadow: -5px -5px 5px 0px #235a80;
 }
