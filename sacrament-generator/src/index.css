@@ -201,10 +201,15 @@ h1 {
   align-items: center;
   box-shadow: 0px -5px 5px 0px #235a80;
 }
-.NavMenu h3 {
+.NavMenu h3,
+.NavMenu a {
   font-family: "Open Sans";
   font-size: 2.5rem;
   margin: 1rem;
+}
+.NavMenu a {
+  color: inherit;
+  text-decoration: inherit;
 }
 footer {
   background-color: #292929;
