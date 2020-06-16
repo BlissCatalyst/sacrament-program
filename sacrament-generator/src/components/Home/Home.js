@@ -17,8 +17,8 @@ export default function Home() {
             <section>
                 <Switch>
                     <Route path="/login" component={Login} />
+                    <Route path="/landing" component={Landing} />
                 </Switch>
-                <Landing />
             </section>
             <footer>
                 <Footer />

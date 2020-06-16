@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import Navigation from "./Navigation/Navigation.js";
 import NavMenu from "./NavMenu/NavMenu.js";
 
 export default function Header() {
     const [showNavMenu, setShowNavMenu] = useState(false);
-    const handleClick = () => {
-        if (showNavMenu === false) {
-            setShowNavMenu(true);
+
+    const navigationStyling = useRef("");
+    useEffect(() => {
+        if (!showNavMenu) {
+            navigationStyling.current = "navMenuOpen";
         } else {
-            setShowNavMenu(false);
+            navigationStyling.current = "";
         }
-    };
+    });
 
     return (
         <div className="App-header">
@@ -20,8 +22,17 @@ export default function Header() {
                     <h1>Program Generator</h1>
                 </div>
             </div>
-            <Navigation showNavMenu={showNavMenu} handleClick={handleClick} />
-            {showNavMenu && <NavMenu />}
+            <Navigation
+                showNavMenu={showNavMenu}
+                setShowNavMenu={setShowNavMenu}
+                navigationStyling={navigationStyling.current}
+            />
+            {showNavMenu && (
+                <NavMenu
+                    showNavMenu={showNavMenu}
+                    setShowNavMenu={setShowNavMenu}
+                />
+            )}
         </div>
     );
 }
