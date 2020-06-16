@@ -14,13 +14,13 @@ export default function Header() {
     };
 
     return (
-        <div className="App-header">
-            <div className="Header-title">
+        <div className={`App-header`}>
+            <div className={`Header-title ${showNavMenu && "showTitleShadow"}`}>
                 <div>
                     <h1>Program Generator</h1>
                 </div>
             </div>
-            <Navigation handleClick={handleClick} />
+            <Navigation showNavMenu={showNavMenu} handleClick={handleClick} />
             {showNavMenu && <NavMenu />}
         </div>
     );
