@@ -203,6 +203,8 @@ h1 {
 }
 .NavMenu h3,
 .NavMenu a {
+  width: 100%;
+  text-align: center;
   font-family: "Open Sans";
   font-size: 2.5rem;
   margin: 1rem;
