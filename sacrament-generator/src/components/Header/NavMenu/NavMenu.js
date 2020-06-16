@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import Login from "../Login/Login.js";
-
-export default function NavMenu() {
+export default function NavMenu(props) {
     return (
-        <div className="NavMenu">
+        <div className="NavMenu" onClick={() => props.setShowNavMenu(false)}>
             <h3>NavMenu</h3>
-            <Login />
+            <Link to="/login">Login</Link>
         </div>
     );
 }
