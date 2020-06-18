@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Login() {
-    const [user, setUser] = useState({ username: "", password: "" });
+    const [user, setUser] = useState({ email: "", password: "" });
 
     const handleChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value });
@@ -9,26 +9,30 @@ export default function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`Username: ${user.username}\nPassword: ${user.password}`);
-        setUser({ username: "", password: "" });
+        console.log(`Email: ${user.email}\nPassword: ${user.password}`);
+        setUser({ email: "", password: "" });
     };
 
     return (
         <div className="Login">
             <form onSubmit={(e) => handleSubmit(e)}>
-                <label>
-                    Username:
+                <label htmlFor="emailInput">
+                    Email:
                     <input
-                        type="text"
-                        name="username"
-                        value={user.username}
+                        id="emailInput"
+                        type="email"
+                        autoComplete="email"
+                        name="email"
+                        value={user.email}
                         onChange={(e) => handleChange(e)}
                     />
                 </label>
-                <label>
+                <label htmlFor="passwordInput">
                     Password:
                     <input
-                        type="text"
+                        id="passwordInput"
+                        type="password"
+                        autoComplete="current-password"
                         name="password"
                         value={user.password}
                         onChange={(e) => handleChange(e)}
