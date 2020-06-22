@@ -151,6 +151,11 @@ body {
 }
 .App {
   background-color: #1b262c;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -218,4 +223,5 @@ h1 {
 }
 footer {
   background-color: #292929;
+  height: 10rem;
 }
