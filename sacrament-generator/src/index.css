@@ -168,6 +168,12 @@ h6 {
 h1 {
   font-size: 3rem;
 }
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+}
 .App-header {
   background-color: #3282b8;
   display: flex;
@@ -220,6 +226,62 @@ h1 {
 }
 .Login {
   margin: 10px 0px;
+  min-height: 47rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: lightgray;
+}
+.Login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25rem;
+}
+.Login label {
+  height: 7rem;
+}
+.Login input {
+  box-sizing: border-box;
+  background-color: #1b262c;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.Login input:focus {
+  outline: none;
+}
+.Login hr {
+  border-color: #3282b8;
+}
+.Login h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  height: 5rem;
+}
+.Login p {
+  font-size: 1.3rem;
+  width: 20rem;
+  color: #ee2222;
+}
+.Login button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 1000;
+  font-size: 1.7rem;
+  color: lightgray;
+  height: 3.5rem;
+  width: 7rem;
+  align-self: flex-end;
+  background-color: #3ea1e4;
+  border-radius: 0.5rem;
+  border-color: #3ea1e4;
+  border-width: 0.25rem;
+  box-shadow: 2px 2px 13px -1px rgba(0, 0, 0, 0.51);
+  padding: 0.2rem 0;
 }
 footer {
   background-color: #292929;
