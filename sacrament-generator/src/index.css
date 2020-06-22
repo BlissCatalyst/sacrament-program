@@ -213,6 +213,9 @@ h1 {
   color: inherit;
   text-decoration: inherit;
 }
+.Login {
+  margin: 10px 0px;
+}
 footer {
   background-color: #292929;
 }
