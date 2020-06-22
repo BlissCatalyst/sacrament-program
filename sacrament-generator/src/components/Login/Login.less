@@ -1,0 +1,74 @@
+@Login-title-color: #a5a5a5;
+@Login-error-color: #ee2222;
+@Login-input-border-color: @header;
+@Login-input-background-color: #122f42;
+@Login-button-color: #3ea1e4;
+
+.Login {
+    margin: 10px 0px;
+    min-height: 47rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: @font-color;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 25rem;
+    }
+
+    label {
+        height: 7rem;
+    }
+
+    input {
+        box-sizing: border-box;
+        background-color: @app-color;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+
+        // Removes Chrome's focus outline for inputs
+        &:focus {
+            outline: none;
+        }
+    }
+
+    hr {
+        border-color: @Login-input-border-color;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        height: 5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        width: 20rem;
+        color: @Login-error-color;
+    }
+
+    button {
+        font-family: @text;
+        font-weight: 1000;
+        font-size: 1.7rem;
+        color: @font-color;
+        height: 3.5rem;
+        width: 7rem;
+        align-self: flex-end;
+        background-color: @Login-button-color;
+        border-radius: 0.5rem;
+        border-color: @Login-button-color;
+        border-width: 0.25rem;
+        box-shadow: 2px 2px 13px -1px rgba(0, 0, 0, 0.51);
+        padding: 0.2rem 0;
+    }
+}

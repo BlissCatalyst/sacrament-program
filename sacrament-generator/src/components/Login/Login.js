@@ -68,16 +68,19 @@ export default function Login() {
     return (
         <div className="Login">
             <form onSubmit={(e) => handleSubmit(e)}>
+                <h3>Login</h3>
                 <label htmlFor="emailInput">
                     <input
                         id="emailInput"
                         type="email"
                         placeholder="Email"
                         autoComplete="email"
+                        autoFocus
                         name="email"
                         value={user.email}
                         onChange={(e) => handleChange(e)}
                     />
+                    <hr />
                     {errors.email.length > 0 ? (
                         <p className="error">{errors.email}</p>
                     ) : null}
@@ -92,15 +95,12 @@ export default function Login() {
                         value={user.password}
                         onChange={(e) => handleChange(e)}
                     />
+                    <hr />
                     {errors.password.length > 7 ? (
                         <p className="error">{errors.password}</p>
                     ) : null}
                 </label>
-                <label>
-                    <button disabled={buttonDisabled ? true : false}>
-                        Login
-                    </button>
-                </label>
+                <button disabled={buttonDisabled ? true : false}>Login</button>
             </form>
         </div>
     );
